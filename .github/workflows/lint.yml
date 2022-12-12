@@ -1,0 +1,32 @@
+name: Lint
+
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+        steps:
+        -   uses: actions/checkout@v2
+        -   name: Set up Python 3.9
+            uses: actions/setup-python@v2
+            with:
+                python-version: 3.9
+
+        -   name: Restore pre-commit cache
+            uses: actions/cache@v2
+            with:
+                path: ~/.cache/pre-commit
+                key: lint-${{ env.pythonLocation }}-${{ hashFiles('**/.pre-commit-config.yaml') }}
+
+        -   name: Install pip dependencies
+            run: |
+                pip install --upgrade pip
+                pip install pre-commit
+
+        -   name: Lint
+            run: |
+                pre-commit run --all-files
