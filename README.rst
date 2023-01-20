@@ -20,7 +20,7 @@ Visit our `documentation`_ for installation, tutorials, examples and more.
 
 Manuscript
 ----------
-Please see our manuscript `Zoe Piran and Mor Nitzan (2022)`_.
+Please see our manuscript `Zoe Piran and Mor Nitzan (2023)`_.
 
 Installation
 ------------
