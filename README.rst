@@ -29,4 +29,4 @@ Install SiFT via PyPI by running::
     pip install sift-sc
 
 .. _documentation: https://sift-sc.readthedocs.io/
-.. _Zoe Piran and Mor Nitzan (2022): https://github.com/nitzanlab/sift-sc
+.. _Zoe Piran and Mor Nitzan (2022): https://doi.org/10.1101/2023.01.18.524512
