@@ -25,7 +25,6 @@ def _knn_kernel_base(
     tgt_key: Optional[str] = None,
     **kwargs,
 ) -> str:
-
     n_neighbors = kwargs.pop("n_neighbors", 15)
     batch_key = kwargs.pop("knn_batch_key", None)
     key_added = kwargs.pop("knn_key_added", "sift")
