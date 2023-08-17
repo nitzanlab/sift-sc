@@ -53,6 +53,7 @@ sphinxcontrib-bibtex = {version = ">=2", optional = true}
 # test
 pytest = {version = ">=7", optional = true}
 
+
 [tool.poetry.extras]
 gpu = ["torch"]
 dev = ["pre-commit"]
